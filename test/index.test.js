@@ -4,23 +4,23 @@ var weSendEmail = require('../lib/index')
   , sinon = require('sinon')
   , cwd = process.cwd();
 
-function validEmailTransportConfig(){
+function validEmailTransportConfig() {
   return {
     defaultService: 'Mandrill'
-    , emailTemplatesFolder: cwd+'/test/fixtures/themes/email/'
+    , emailTemplatesFolder: cwd + '/test/fixtures/themes/email/'
     , email: {
-      defaultService: 'Mandrill',
-      services: {
+      defaultService: 'Mandrill'
+      , services: {
         Mandrill: {
-          service: 'Mandrill',
-          type: 'SMTP',
-          host: 'smtp.mandrillapp.com',
-          port: 587,
-          debug: true,
-          auth: {
+          service: 'Mandrill'
+          , type: 'SMTP'
+          , host: 'smtp.mandrillapp.com'
+          , port: 587
+          , debug: true
+          ,auth: {
             // test mandrill key
-            user: 'alberto.souza.99@gmail.com',
-            pass: 'KuOkoKG3FJf5shqsl82xOQ'
+            user: 'alberto.souza.99@gmail.com'
+            , pass: 'KuOkoKG3FJf5shqsl82xOQ'
           }
         }
       }
@@ -28,12 +28,12 @@ function validEmailTransportConfig(){
   }
 }
 
-function emailDebugTransportConfig(){
+function emailDebugTransportConfig() {
   return {
     defaultService: null
-    , emailTemplatesFolder: cwd+'/test/fixtures/themes/email/'
+    , emailTemplatesFolder: cwd + '/test/fixtures/themes/email/'
     , email: {
-      defaultService: null,
+      defaultService: null
     }
   }
 }
@@ -66,8 +66,8 @@ describe('we-send-email', function () {
     }, function(err, resp) {
 
       should.not.exist(err);
-      should(resp).have.property('rejected', []);
-      should(resp).have.properties(['response', 'envelope','messageId']);
+      should(resp).have.property( 'rejected', [] );
+      should(resp).have.properties( [ 'response', 'envelope','messageId' ] );
 
       done();
     });
