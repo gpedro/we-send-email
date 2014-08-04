@@ -5,7 +5,8 @@
   "dependencies": {
     "email-templates": "~1.1.0",
     "lodash": "~2.4.1",
-    "nodemailer": "~1.0.3",
+    "nodemailer": "1.1.1",
+    "nodemailer-smtp-transport": "^0.1.12",
     "we-theme-engine": "0.0.7"
   },
   "main": "./lib/index.js",
@@ -23,10 +24,12 @@
   "author": "Afro <contato@albertosouza.net>",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^1.18.2",
     "istanbul": "^0.2.7",
+    "jscs": "^1.4.5",
     "jshint": "^2.5.0",
-    "jscs": "^1.4.5"
+    "mocha": "^1.18.2",
+    "should": "^4.0.4",
+    "sinon": "^1.10.3"
   },
   "repository": {
     "type": "git",
