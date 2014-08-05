@@ -50,6 +50,6 @@ See:
 * https://github.com/wejs/we
 
 ## Credits
-[Afro](https://github.com/albertosouza/)
+[Alberto Souza](https://github.com/albertosouza/)
 
 LICENSE: MIT
