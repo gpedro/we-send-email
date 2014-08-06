@@ -50,6 +50,8 @@ function emailStumb() {
 GLOBAL.sails = {};
 sails.config = {};
 sails.config.enviroment = 'prod';
+sails.config.paths = {};
+sails.config.paths.fallbackEmailTemplateFolder = '';
 
 describe('we-send-email', function () {
 

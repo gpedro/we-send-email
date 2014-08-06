@@ -1,42 +1,56 @@
-{ "asi": true
-, "boss": true
-, "browser": true
-, "camelcase": true
-, "curly": false
-, "devel": false
-, "devel": true
-, "eqeqeq": true
-, "eqnull": true
-, "es5": false
-, "evil": false
-, "immed": false
-, "indent": 2
-, "jquery": true
-, "latedef": false
-, "laxbreak": true
-, "laxcomma": true
-, "maxcomplexity": 6
-, "maxdepth": 4
-, "maxstatements": 25
-, "maxlen": 120
-, "newcap": true
-, "node": true
-, "noempty": false
-, "nonew": true
-, "quotmark": "single"
-, "nonew": true
-, "predef":
-  [ "describe"
-  , "it"
-  , "before"
-  , "beforeEach"
-  , "after"
-  , "afterEach"
-  , "sails"
-  ]
-, "smarttabs": true
-, "strict": false
-, "trailing": false
-, "undef": true
-, "unused": true
+{
+  "asi": true,
+  "bitwise": true,
+  "boss": true,
+  "browser": true, // browser | for browsers ...
+  "node": true, // server | for node ..
+  "camelcase": true,
+  "curly": false, // always put curly braces around blocks
+  "debug": true, // suppresses warnings about the debugger statements in your code.
+  "devel": true, // used for logging debugging: console, alert, etc
+  "eqeqeq": true, // prohibits the use of == and != in favor of === and !==
+  "eqnull": true, // suppresses warnings about == null comparisons
+  "esnext": false, // code uses ECMAScript 6 specific syntax.
+  "evil": false, // never use eval! never!
+  "expr": true,
+  "forin": true, //  for in loops to filter object's items
+  "funcscope": true,
+  "globalstrict": false,
+  "immed": true,
+  "iterator": false,
+  "lastsemic": true,
+  "latedef": false,
+  "laxbreak": true,
+  "laxcomma": true,
+  "multistr": false,
+  "newcap": true, // requires you to capitalize names of constructor functions
+  "noarg": true, // rohibits the use of arguments.caller and arguments.callee
+  "nonew": true,
+  "nonstandard": false,
+  "plusplus": false, //  ++ and --
+  "smarttabs": true,
+  "strict": false,
+  "sub": true,
+  "undef": true,
+  "unused": true,
+  "validthis": true,
+  "worker": false,
+  "regexp": true,
+  "wsh": false, //  running as a script for the Windows Script Host. grrrr
+  "maxlen": 120, // maximum length of a line.
+  "indent": 2,
+  "maxerr": 25,
+  "predef": [
+    "describe",
+    "it",
+    "before",
+    "beforeEach",
+    "after",
+    "afterEach",
+    "sails",
+    "async"
+  ],
+  "quotmark": "single",
+  "maxcomplexity": 6,
+  "maxdepth": 6
 }
