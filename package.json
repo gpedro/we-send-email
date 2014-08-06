@@ -1,7 +1,7 @@
 {
   "name": "we-send-email",
   "description": "We.js email sender machine!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "email-templates": "~1.1.0",
     "lodash": "~2.4.1",
