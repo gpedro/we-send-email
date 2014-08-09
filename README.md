@@ -1,6 +1,6 @@
 # we-send-email
 
-We.js email sender machine!
+Npm package to send emails with sails.js used on We.js
 ===========================
 
 With node ```nodemailer``` and ```email-templates```

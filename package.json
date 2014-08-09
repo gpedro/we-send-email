@@ -1,6 +1,6 @@
 {
   "name": "we-send-email",
-  "description": "We.js email sender machine!",
+  "description": "Npm package to send emails with sails.js used on We.js",
   "version": "0.0.3",
   "dependencies": {
     "email-templates": "~1.1.0",
