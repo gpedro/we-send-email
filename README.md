@@ -1,23 +1,27 @@
 # we-send-email
 
-Npm package to send emails with sails.js used on We.js
+Npm package and Sails hook to send emails with sails.js used on We.js
 ===========================
 
 With node ```nodemailer``` and ```email-templates```
 
-## Installation
+## How to install
 
 ```sh
 npm install we-send-email --save
 ```
 
-see https://github.com/wejs/we for config example
+And add it in one sails.js hook:
+
+file: ```api/hooks/email/index.js```
+
+```js
+module.exports = require('we-send-email').hook;
+```
 
 ## Usage
 
 ```js
-var weSendEmail = require('we-send-email');
-
 var options = {};
 // to email
 options.email = 'contato@albertosouza.net';
@@ -38,11 +42,13 @@ var templateVariables = {
   }
 };
 
-weSendEmail.sendEmail(options ,templateName ,templateVariables, cb);
+sails.email.sendEmail(options ,templateName ,templateVariables, cb);
 
 ```
 
 ## Configuration
+
+> the config file is [project]/config/email.js
 
 See:
 
