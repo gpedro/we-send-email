@@ -6,22 +6,19 @@ var weSendEmail = require('../lib/index')
 
 function validEmailTransportConfig() {
   return {
-    defaultService: 'Mandrill'
-    , emailTemplatesFolder: cwd + '/test/fixtures/themes/email/'
-    , email: {
-      defaultService: 'Mandrill'
-      , services: {
-        Mandrill: {
-          service: 'Mandrill'
-          , type: 'SMTP'
-          , host: 'smtp.mandrillapp.com'
-          , port: 587
-          , debug: true
-          ,auth: {
-            // test mandrill key
-            user: 'alberto.souza.99@gmail.com'
-            , pass: 'KuOkoKG3FJf5shqsl82xOQ'
-          }
+    defaultService: 'Mandrill',
+    emailTemplatesFolder: cwd + '/test/fixtures/themes/email/',
+    services: {
+      Mandrill: {
+        service: 'Mandrill',
+        type: 'SMTP',
+        host: 'smtp.mandrillapp.com',
+        port: 587,
+        debug: true,
+        auth: {
+          // test mandrill key
+          user: 'alberto.souza.99@gmail.com',
+          pass: 'KuOkoKG3FJf5shqsl82xOQ'
         }
       }
     }
@@ -30,11 +27,12 @@ function validEmailTransportConfig() {
 
 function emailDebugTransportConfig() {
   return {
-    defaultService: null
-    , emailTemplatesFolder: cwd + '/test/fixtures/themes/email/'
-    , email: {
+    defaultService: 'test',
+    emailTemplatesFolder: cwd + '/test/fixtures/themes/email/',
+    email: {
       defaultService: null
-    }
+    },
+    services: {}
   }
 }
 
