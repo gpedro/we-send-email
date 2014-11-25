@@ -1,7 +1,7 @@
 {
   "name": "we-send-email",
   "description": "Npm package to send emails with sails.js used on We.js",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "dependencies": {
     "email-templates": "~1.1.0",
     "lodash": "~2.4.1",
